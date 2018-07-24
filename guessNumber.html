@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>JAVASCRIPT 2</title>
+
+  <script src="guessNumber.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab|Ultra" rel="stylesheet">
+
+  <style>
+
+  body {
+    background-image: url("dice.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: "Ultra", "serif";
+    text-align:center;
+    color: red;
+    font-size: 50px;
+  }
+
+  p {
+    font-family: "Antic Slab","serif";
+    text-align:center;
+  }
+
+  #directions {
+
+    background-color: #9ACDFC;
+    height: 80px;
+    padding: 5px;
+
+
+  }
+
+  #bank-box {
+
+    background-color: #9ACDFC;
+    height: 70px;
+
+
+  }
+
+  #result-box {
+
+    background-color: #9ACDFC;
+    height: 60px;
+
+  }
+
+  #buttons {
+
+    padding: 80px;
+  }
+
+  h3 {
+    text-align: center;
+    display: inline;
+
+  }
+
+  .history {
+
+    background-color: grey;
+    height: 100px;
+    margin:auto;
+    width: 20%;
+  }
+
+  .history p {
+    display: inline;
+  }
+
+
+
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <h1> GUESS THE NUMBER! </h1>
+
+<div id = "directions">
+  <p>Guess the Number is a game of chance that involves absolutely no skill.
+  In this game, the computer will roll a six-sided die. Your job is to predict whether an
+EVEN or ODD number will be rolled. Each guess costs $10, and you start the game with $50.
+If you guess incorrectly, you will lose your $10 bet, but if you guess correctly you will win $10.
+The game ends when you run out of money or when you choose to leave this webpage! </p>
+</div>
+
+
+<div id = "bank-box">
+  <p>Your bank</p>
+  <p id = "amount">$50</p>
+</div>
+
+
+
+
+
+<div id = "result-box">
+  <p> RESULTS </p>
+  <p><span id = "choice"></span>
+    <span id = "result"></span></p>
+</div>
+
+
+
+
+<div id = "buttons">
+<img id = "picture" src = "dice-unknown.png"/>
+<p> </p>
+<button class="push even" type="button" onclick="push('even')">EVEN</button>
+<button class="push odd" type="button" onclick="push('odd')">ODD</button>
+
+<!-- <div class = "history">
+<h3>RESULT HISTORY<br></br></h3>
+
+<div id = "wins"><p>WINS</p>
+</div>
+
+<div id = "losses"><p>LOSSES</p>
+</div>
+
+</div> -->
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
